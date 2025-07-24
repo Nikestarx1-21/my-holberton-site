@@ -36,16 +36,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       margin: 20px;
-    }
-
-    aside {
-      flex: 1;
-      overflow-y: auto;
-      padding: 20px;
-      margin: 20px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: #bbaea6;
     }
 
     nav {
@@ -88,6 +79,22 @@
       font-weight: bold;
       border-radius: 10px;
       margin: 0 20px;
+    }
+
+    .about-link {
+      text-align: center;
+      margin: 10px 0 20px 0;
+    }
+
+    .about-link a {
+      font-size: 18px;
+      color: #2a52be;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .about-link a:hover {
+      text-decoration: underline;
     }
 
     h2 {
@@ -143,6 +150,33 @@
         flex-direction: column;
       }
     }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .circle-link {
+      width: 50px;
+      height: 50px;
+      background-color: #001f4d;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 28px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .circle-link:hover {
+      background-color: #003399;
+      transform: scale(1.1);
+    }
   </style>
 </head>
 
@@ -150,52 +184,66 @@
   <nav>
     <div class="logo">Niki Doubakis</div>
     <ul>
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#goals">Goals</a></li>
-      <li><a href="#holberton">Why Holberton?</a></li>
-      <li><a href="#future">Looking Ahead</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="holberton.html">Why Holberton?</a></li>
+      <li><a href="future.html">Looking Ahead</a></li>
     </ul>
   </nav>
 
   <div class="banner">Hello, Holberton!</div>
 
+ 
+
   <main>
     <article>
       <div class="section" id="about">
         <h2>About Me</h2>
-        <a href="https://www.linkedin.com/in/niki-doubakis-519a17250/" target="_blank" rel="noopener noreferrer">
-          <img src="me.jpg" alt="Niki Doubakis" class="profile-img" />
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <img src="https://avatars.githubusercontent.com/u/166817784?s=400&u=c8acd9af23cccc627776c93cae33c523bc78a1cf&v=4" alt="Niki Doubakis" class="profile-img" />
         </a>
         <p class="about-text">This is me - Niki Doubakis, future software engineer.</p>
+        <p>Feel free to follow my social media links! I am an avid technology lover. Throughout my studies in Information technology,
+          I have developed a solid foundation in networking, systems administration, and cybersecurity.
+          I have also gained valuable problem-solving and troubleshooting skills through various projects. Additionally, my experience building PCs at Aftershock has enhanced my technical capabilities and strengthened my customer service and teamwork skills.</p>
+
+        <div class="social-links">
+          <a href="https://x.com/NDoubakis91926" target="_blank" rel="noopener noreferrer" class="circle-link">🐦</a>
+          <a href="https://twitch.tv/nikestarx21" target="_blank" rel="noopener noreferrer" class="circle-link">🎮</a>
+          <a href="https://discord.gg/nikestarx21" target="_blank" rel="noopener noreferrer" class="circle-link">💬</a>
+          <a href="https://github.com/Nikestarx1-21" target="_blank" rel="noopener noreferrer" class="circle-link">🐙</a>
+        </div>
       </div>
     </article>
+
     <aside>
-  <p>Comments and discussions below:</p>
-  <div id="disqus_thread"></div>
-  <script>
-      var disqus_config = function () {
+      <p>Comments and discussions below:</p>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
           this.page.url = window.location.href;
           this.page.identifier = document.location.pathname;
-      };
-      (function () {
-          var d = document, s = d.createElement('script');
+        };
+        (function () {
+          var d = document,
+            s = d.createElement('script');
           s.src = 'https://niki-doubakis.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view 
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.
-  </noscript>
-</aside>
-
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.
+      </noscript>
+    </aside>
   </main>
 
   <footer>
-    <p>Website made by yours truly : Niki Doubakis – 
+    <p>Website made by yours truly : Niki Doubakis –
       <a href="https://www.linkedin.com/in/niki-doubakis-519a17250/">Visit me on LinkedIn</a>
     </p>
   </footer>
 </body>
+
 </html>
